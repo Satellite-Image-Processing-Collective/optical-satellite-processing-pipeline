@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated geospatial data (can be large)
+outputs/*.tif
+outputs/*.tiff
+outputs/*.aux.xml
+
+# Keep the example QA dashboard in Git
+!outputs/optisat_pipeline_dashboard.png
