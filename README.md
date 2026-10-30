@@ -1,5 +1,4 @@
-# OptiSat-L0toL2A
-
+# Optical Satellite Image Preprocessing (Raw L0 data to L2A) pipeline.
 **Closed-loop satellite optical sensor simulator and L0-to-L2A processing prototype.**
 
 OptiSat demonstrates a four-band pushbroom optical payload, a physics-inspired forward degradation model, an inverse image-processing chain, geospatial export, and quantitative quality checks.
