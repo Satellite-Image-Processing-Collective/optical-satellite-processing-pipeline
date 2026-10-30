@@ -101,56 +101,6 @@ python -m pytest -q
 
 The tests cover the 12-bit output range, defective-pixel interpolation, PRNU destriping, Wiener restoration, and GCP-based geometric registration.
 
-## 4. Push the project to GitHub
-
-### A. Create an empty GitHub repository
-
-1. Sign in at [GitHub](https://github.com/).
-2. Click **New repository**.
-3. Name it `OptiSat-L0toL2A`.
-4. Choose Public or Private.
-5. Do not add a README, `.gitignore`, or license on GitHub because this project already contains those files.
-6. Click **Create repository**. Keep the repository page open.
-
-### B. Initialize Git and make the first commit
-
-In PowerShell, make sure you are in the folder that contains `README.md`, then run:
-
-```powershell
-git init
-git add .
-git status
-git commit -m "Organize OptiSat into modules and tests"
-git branch -M main
-```
-
-If Git asks for your identity, configure it once using the name and email associated with your Git commits:
-
-```powershell
-git config --global user.name "Your Name"
-git config --global user.email "you@example.com"
-```
-
-Then rerun the `git commit` command.
-
-### C. Connect the local folder to GitHub and push
-
-Copy the HTTPS repository URL from the GitHub page. It will look like this (replace the username):
-
-```powershell
-git remote add origin https://github.com/YOUR_USERNAME/OptiSat-L0toL2A.git
-git push -u origin main
-```
-
-GitHub may open a browser window for authentication. After the push completes, refresh the repository page; your folders and files should appear.
-
-For later updates, use:
-
-```powershell
-git add .
-git commit -m "Describe your changes"
-git push
-```
 
 ## Important scientific / scope notes
 
