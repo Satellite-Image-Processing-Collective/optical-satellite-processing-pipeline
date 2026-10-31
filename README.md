@@ -1,7 +1,6 @@
 # Optical Satellite Image Preprocessing (Raw L0 data to L2A) pipeline.
-**Closed-loop satellite optical sensor simulator and L0-to-L2A processing prototype.**
 
-OptiSat demonstrates a four-band pushbroom optical payload, a physics-inspired forward degradation model, an inverse image-processing chain, geospatial export, and quantitative quality checks.
+OptiSat demonstrates a multi-band pushbroom optical payload, a physics-based forward degradation model, an inverse image-processing chain, geospatial GeoTIFF export, and quantitative quality assurance checks.
 
 ## What the project does
 
@@ -101,6 +100,13 @@ python -m pytest -q
 
 The tests cover the 12-bit output range, defective-pixel interpolation, PRNU destriping, Wiener restoration, and GCP-based geometric registration.
 
+## Outcomes:
+![OptiSat Six-Stage Pipeline Dashboard](outputs/optisat_pipeline_dashboard.png)
+Stage Progression: The dashboard displays Ground Truth L2A BOA RGB, degraded Raw L0, destriped and Wiener-restored L1A, orthorectified L1C TOA reflectance, recovered L2A BOA surface reflectance, and the Absolute Reflectance Error Map.   
+
+## Quantitative Evaluation & Terminal Output:
+![VS Code Terminal Validation Output](outputs/evaluation.webp)
+The validation module evaluates reconstruction accuracy over the valid interior region of interest by measuring Top-of-Atmosphere and Bottom-of-Atmosphere Reflectance RMSE, Peak Signal-to-Noise Ratio (PSNR), Structural Similarity Index (SSIM), Spectral Angle Mapper (SAM), Cross-Track PRNU Destriping Gain, and Sub-Pixel Geometric Orthorectification RMSE.
 
 ## Important scientific / scope notes
 
